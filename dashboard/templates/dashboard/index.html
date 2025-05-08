@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management Dashboard</title>
+    <link rel="stylesheet" href="{% static 'dashboard/css/dashboard.css' %}">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Employee Management Dashboard</h1>
+        </header>
+
+        <div class="charts-container">
+            <div class="chart-box">
+                <h2>Employees per Department</h2>
+                <div class="chart-wrapper">
+                    <canvas id="departmentChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-box">
+                <h2>Monthly Attendance Overview</h2>
+                <div class="chart-wrapper">
+                    <canvas id="attendanceChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load Chart.js library first -->
+    <script src="{% static 'dashboard/js/chart.min.js' %}"></script>
+    <!-- Then load custom JS -->
+    <script src="{% static 'dashboard/js/dashboard.js' %}"></script>
+</body>
+</html>
