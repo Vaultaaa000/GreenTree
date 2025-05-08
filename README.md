@@ -1,6 +1,6 @@
 # Employee Management System
 
-A comprehensive Django-based employee management system with role-based access control, featuring department management, employee records, attendance tracking, and performance assessment.
+A Django-based employee management system with role-based access control, featuring department management, employee records, attendance tracking, and performance records.
 
 ## Features
 
